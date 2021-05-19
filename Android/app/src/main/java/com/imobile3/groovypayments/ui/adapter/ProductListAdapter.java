@@ -54,11 +54,13 @@ public class ProductListAdapter
     public void onBindViewHolder(ViewHolder holder, int position) {
         Product item = mItems.get(position);
 
-        holder.label.setText(item.getName());
+        holder.title.setText(item.getName());
+
+        holder.disc.setText(item.getDesc());
 
         Picasso.get().load(item.getImageName()).into(holder.imageView);
 
-        holder.label.setTextColor(
+        holder.title.setTextColor(
                 StateListHelper.getTextColorSelector(mContext, R.color.black_space));
     }
 
@@ -69,14 +71,16 @@ public class ProductListAdapter
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ViewGroup container;
-        TextView label;
+        TextView title;
+        TextView disc;
         ImageView imageView;
 
         ViewHolder(View itemView) {
             super(itemView);
             container = itemView.findViewById(R.id.container);
-            label = itemView.findViewById(R.id.label);
+            title = itemView.findViewById(R.id.tv_name);
             imageView = itemView.findViewById(R.id.icon);
+            disc = itemView.findViewById(R.id.tv_description);
             container.setOnClickListener(this);
         }
 

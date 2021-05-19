@@ -55,6 +55,7 @@ public class OrderEntryViewModel extends ViewModel {
                     Product newProduct = new Product();
 
                     newProduct.setName(product.getName());
+                    newProduct.setDesc(product.getDescription());
 
                     if(product.getImages() != null && product.getImages().size() > 0) {
                         newProduct.setImageName(product.getImages().get(0));

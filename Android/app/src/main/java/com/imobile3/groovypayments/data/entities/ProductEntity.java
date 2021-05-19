@@ -26,6 +26,12 @@ public class ProductEntity {
 
     @ColumnInfo(name = "imageName")
     private String mImageName;
+
+    /**
+     * Optional Prodcut Description
+     */
+    @ColumnInfo(name = "description")
+    private String mDesc;
     /**
      * What is the price-per-unit (in pennies) that we charge the customer?
      */
@@ -73,6 +79,12 @@ public class ProductEntity {
 
     public void setImageName(String imageName) {
         mImageName = imageName;
+    }
+
+    public String getDesc() { return mDesc; }
+
+    public void setDesc(String desc) {
+        mDesc = desc;
     }
 
     public String getNote() {

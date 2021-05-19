@@ -44,7 +44,7 @@
             tools:background="#fe6">
 
             <TextView
-                android:id="@+id/label"
+                android:id="@+id/tv_name"
                 style="@style/TextView.Large.Bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
