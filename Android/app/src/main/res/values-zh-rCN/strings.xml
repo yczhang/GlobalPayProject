@@ -1,106 +1,92 @@
 <resources>
-    <string name="app_name">Groovy Mobile Payments</string>
+    <string name="app_name">Groovy 移动支付</string>
 
     <!-- Common -->
-    <string name="common_ok">OK</string>
-    <string name="common_cancel">Cancel</string>
-    <string name="common_back">Back</string>
-    <string name="common_change">Change</string>
-    <string name="common_order_entry">Order Entry</string>
-    <string name="common_management">Management</string>
-    <string name="common_time_tracking">Time Tracking</string>
-    <string name="common_under_construction">Under Construction</string>
-    <string name="common_acknowledged">Acknowledged</string>
-    <string name="common_order_history">Order History</string>
-    <string name="common_secret_functions">Secret Functions</string>
-    <string name="common_user_profile">User Profile</string>
-    <string name="common_lorem_ipsum_description">Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Integer commodo, nisi a rutrum dapibus, urna elit cursus mi, ut
-        elementum lacus elit nec diam. Nullam laoreet dui id dui facilisis lacinia. Sed convallis
-        feugiat ex, interdum tincidunt sapien consequat ut.</string>
-    <string name="reports">Reports</string>
+    <string name="common_ok">认可</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_back">返回</string>
+    <string name="common_change">更改</string>
+    <string name="common_order_entry">订单</string>
+    <string name="common_management">管理</string>
+    <string name="common_time_tracking">时间追踪g</string>
+    <string name="common_under_construction">正在建立。。。</string>
+    <string name="common_acknowledged">认知</string>
+    <string name="common_order_history">订单历史</string>
+    <string name="common_secret_functions">秘密功能</string>
+    <string name="common_user_profile">用户信息</string>
+    <string name="common_lorem_ipsum_description">这个是什么，俺老爷爷不晓得</string>
+    <string name="reports">报表</string>
 
     <!-- Login -->
     <string name="prompt_email">电子邮箱地址</string>
     <string name="prompt_password">输入密码</string>
     <string name="action_sign_in">登录或者注册</string>
     <string name="skip_login">跳过登录</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome! "</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="action_sign_in_short">注册</string>
+    <string name="welcome">"欢迎! "</string>
+    <string name="invalid_username">非有效用户名</string>
+    <string name="invalid_password">密码至少五位数</string>
+    <string name="login_failed">"注册失败"</string>
 
     <!-- Main Dashboard -->
-    <string name="order_entry_description">Browse the store inventory or sell products to the
-        customer.</string>
-    <string name="user_profile_description">View or edit your current user settings.</string>
-    <string name="management_description">Manage your Point-of-Sale settings.</string>
-    <string name="time_tracking_description">Clock in / out and view your recent activity.</string>
-    <string name="order_history_description">Take a look at historical orders fulfilled on this
-        Point-of-Sale.</string>
-    <string name="secret_functions_description">Super secret area where you can perform special
-        functions, like resetting the Demo Database.</string>
-    <string name="placeholder_description">This is a temporary placeholder.</string>
-    <string name="under_construction_alert_message">This area of the application is still
-        under construction. Feel free to demonstrate your skills and build it.</string>
-    <string name="main_dashboard_subtitle">Where would you like to go?</string>
-    <string name="reports_description">View products popularity chart based on daily
-        report.</string>
+    <string name="order_entry_description">搜索库存或者销售用户产品</string>
+    <string name="user_profile_description">查询修改用户信息</string>
+    <string name="management_description">管理POS设置</string>
+    <string name="time_tracking_description">记录活动信息</string>
+    <string name="order_history_description">查看POS销售历史.</string>
+    <string name="secret_functions_description">机密地区，。。。.</string>
+    <string name="placeholder_description">这是一个临时板块</string>
+    <string name="under_construction_alert_message">这里还在架构，欢迎参与</string>
+    <string name="main_dashboard_subtitle">您想去哪里?</string>
+    <string name="reports_description">查询日常报表.</string>
 
     <!-- User Profile -->
-    <string name="user_profile_subtitle_format">Welcome %1$s.</string>
-    <string name="user_profile_username">Username:</string>
-    <string name="user_profile_email">Email:</string>
-    <string name="user_profile_hours_week">Hours (Week):</string>
+    <string name="user_profile_subtitle_format">欢迎 %1$s.</string>
+    <string name="user_profile_username">用户名:</string>
+    <string name="user_profile_email">地址邮箱:</string>
+    <string name="user_profile_hours_week">小时 (周):</string>
 
     <!-- Secret Functions -->
-    <string name="secret_functions_subtitle">Top secret area.</string>
-    <string name="secret_functions_reset_database">Reset Database</string>
-    <string name="secret_functions_erase_cart">Erase Cart</string>
-    <string name="secret_functions_alert_title">Function Executed</string>
-    <string name="secret_functions_alert_button">Copy that.</string>
-    <string name="secret_functions_alert_reset_database">Demo Database successfully reset
-        (all original Demo data has been restored). This message will self-destruct.</string>
-    <string name="secret_functions_alert_erase_cart">Your current Cart instance has been erase.
-        It\'s almost as if your Cart never existed&#8230;</string>
+    <string name="secret_functions_subtitle">顶级秘密区.</string>
+    <string name="secret_functions_reset_database">重设数据库</string>
+    <string name="secret_functions_erase_cart">清除购物车</string>
+    <string name="secret_functions_alert_title">功能已经执行</string>
+    <string name="secret_functions_alert_button">拷贝这个.</string>
+    <string name="secret_functions_alert_reset_database">演示数据库成功重设</string>
+    <string name="secret_functions_alert_erase_cart">您的购物车已经清除，好比水中月&#8230;</string>
 
     <!-- Order Entry -->
-    <string name="order_entry_subtitle">Add products to the order.</string>
-    <string name="order_entry_subtitle_checkout">Click the top-right icon to checkout.</string>
+    <string name="order_entry_subtitle">加入产品到订单.</string>
+    <string name="order_entry_subtitle_checkout">敲击图片完成购物.</string>
 
     <!-- Order History -->
-    <string name="order_history_subtitle">Recent orders listed below.</string>
-    <string name="order_history_alert_title">Not Implemented</string>
-    <string name="order_history_alert_button">Sure.</string>
-    <string name="order_history_alert_message">Order History functionality not implemented.
-        Please stop clicking on the list items.</string>
-    <string name="order_history_alert_warning_title">Stop it</string>
-    <string name="order_history_alert_warning_button">Whatever.</string>
-    <string name="order_history_alert_warning_message">You were warned not to click the list items.
-        Administrators have been notified.</string>
+    <string name="order_history_subtitle">最近的订单</string>
+    <string name="order_history_alert_title">没有支持</string>
+    <string name="order_history_alert_button">好的.</string>
+    <string name="order_history_alert_message">订单历史不存在.</string>
+    <string name="order_history_alert_warning_title">停止</string>
+    <string name="order_history_alert_warning_button">怎么都行.</string>
+    <string name="order_history_alert_warning_message">不用点击，否则会通知管理者.</string>
 
     <!--Daily Report-->
-    <string name="daily_report_subtitle">Daily Report</string>
-    <string name="daily_report_product_popularity">Product Popularity</string>
-    <string name="daily_report_progress_message">Loading chart</string>
+    <string name="daily_report_subtitle">每日报告</string>
+    <string name="daily_report_product_popularity">产品热度</string>
+    <string name="daily_report_progress_message">下载图表</string>
 
     <!-- Checkout -->
-    <string name="checkout_subtitle">How will you pay?</string>
-    <string name="checkout_with_cash">With Cash</string>
-    <string name="checkout_with_credit">With Credit</string>
-    <string name="checkout_pay_cash">Pay (Cash)</string>
-    <string name="checkout_pay_credit">Pay (Credit)</string>
-    <string name="checkout_complete_title_message">Congratulations! Your payment was
-        approved!</string>
-    <string name="checkout_complete_subtitle">Order Complete!</string>
-    <string name="checkout_complete_customer_message">Thanks for shopping with us - click the
-        button below to return to the Order Entry screen.</string>
+    <string name="checkout_subtitle">您想如何支付?</string>
+    <string name="checkout_with_cash">现金</string>
+    <string name="checkout_with_credit">信用卡</string>
+    <string name="checkout_pay_cash">用现金</string>
+    <string name="checkout_pay_credit">用信用卡</string>
+    <string name="checkout_complete_title_message">祝贺，您的支付已经被批准!</string>
+    <string name="checkout_complete_subtitle">订单完成!</string>
+    <string name="checkout_complete_customer_message">谢谢购物.</string>
     <string name="checkout_complete_groovy">Groovy!</string>
 
     <!-- Payment Types -->
-    <string name="credit">Credit</string>
-    <string name="cash">Cash</string>
+    <string name="credit">信用</string>
+    <string name="cash">现金</string>
 
     <!-- Keypad -->
     <string name="keypad_1">1</string>
