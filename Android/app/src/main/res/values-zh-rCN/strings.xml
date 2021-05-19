@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Groovy 移动支付</string>
+
+    <!-- Common -->
+    <string name="common_ok">认可</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_back">返回</string>
+    <string name="common_change">更改</string>
+    <string name="common_order_entry">订单</string>
+    <string name="common_management">管理</string>
+    <string name="common_time_tracking">时间追踪g</string>
+    <string name="common_under_construction">正在建立。。。</string>
+    <string name="common_acknowledged">认知</string>
+    <string name="common_order_history">订单历史</string>
+    <string name="common_secret_functions">秘密功能</string>
+    <string name="common_user_profile">用户信息</string>
+    <string name="common_lorem_ipsum_description">这个是什么，俺老爷爷不晓得</string>
+    <string name="reports">报表</string>
+
+    <!-- Login -->
+    <string name="prompt_email">电子邮箱地址</string>
+    <string name="prompt_password">输入密码</string>
+    <string name="action_sign_in">登录或者注册</string>
+    <string name="skip_login">跳过登录</string>
+    <string name="action_sign_in_short">注册</string>
+    <string name="welcome">"欢迎! "</string>
+    <string name="invalid_username">非有效用户名</string>
+    <string name="invalid_password">密码至少五位数</string>
+    <string name="login_failed">"注册失败"</string>
+
+    <!-- Main Dashboard -->
+    <string name="order_entry_description">搜索库存或者销售用户产品</string>
+    <string name="user_profile_description">查询修改用户信息</string>
+    <string name="management_description">管理POS设置</string>
+    <string name="time_tracking_description">记录活动信息</string>
+    <string name="order_history_description">查看POS销售历史.</string>
+    <string name="secret_functions_description">机密地区，。。。.</string>
+    <string name="placeholder_description">这是一个临时板块</string>
+    <string name="under_construction_alert_message">这里还在架构，欢迎参与</string>
+    <string name="main_dashboard_subtitle">您想去哪里?</string>
+    <string name="reports_description">查询日常报表.</string>
+
+    <!-- User Profile -->
+    <string name="user_profile_subtitle_format">欢迎 %1$s.</string>
+    <string name="user_profile_username">用户名:</string>
+    <string name="user_profile_email">地址邮箱:</string>
+    <string name="user_profile_hours_week">小时 (周):</string>
+
+    <!-- Secret Functions -->
+    <string name="secret_functions_subtitle">顶级秘密区.</string>
+    <string name="secret_functions_reset_database">重设数据库</string>
+    <string name="secret_functions_erase_cart">清除购物车</string>
+    <string name="secret_functions_alert_title">功能已经执行</string>
+    <string name="secret_functions_alert_button">拷贝这个.</string>
+    <string name="secret_functions_alert_reset_database">演示数据库成功重设</string>
+    <string name="secret_functions_alert_erase_cart">您的购物车已经清除，好比水中月&#8230;</string>
+
+    <!-- Order Entry -->
+    <string name="order_entry_subtitle">加入产品到订单.</string>
+    <string name="order_entry_subtitle_checkout">敲击图片完成购物.</string>
+
+    <!-- Order History -->
+    <string name="order_history_subtitle">最近的订单</string>
+    <string name="order_history_alert_title">没有支持</string>
+    <string name="order_history_alert_button">好的.</string>
+    <string name="order_history_alert_message">订单历史不存在.</string>
+    <string name="order_history_alert_warning_title">停止</string>
+    <string name="order_history_alert_warning_button">怎么都行.</string>
+    <string name="order_history_alert_warning_message">不用点击，否则会通知管理者.</string>
+
+    <!--Daily Report-->
+    <string name="daily_report_subtitle">每日报告</string>
+    <string name="daily_report_product_popularity">产品热度</string>
+    <string name="daily_report_progress_message">下载图表</string>
+
+    <!-- Checkout -->
+    <string name="checkout_subtitle">您想如何支付?</string>
+    <string name="checkout_with_cash">现金</string>
+    <string name="checkout_with_credit">信用卡</string>
+    <string name="checkout_pay_cash">用现金</string>
+    <string name="checkout_pay_credit">用信用卡</string>
+    <string name="checkout_complete_title_message">祝贺，您的支付已经被批准!</string>
+    <string name="checkout_complete_subtitle">订单完成!</string>
+    <string name="checkout_complete_customer_message">谢谢购物.</string>
+    <string name="checkout_complete_groovy">Groovy!</string>
+
+    <!-- Payment Types -->
+    <string name="credit">信用</string>
+    <string name="cash">现金</string>
+
+    <!-- Keypad -->
+    <string name="keypad_1">1</string>
+    <string name="keypad_2">2</string>
+    <string name="keypad_3">3</string>
+    <string name="keypad_4">4</string>
+    <string name="keypad_5">5</string>
+    <string name="keypad_6">6</string>
+    <string name="keypad_7">7</string>
+    <string name="keypad_8">8</string>
+    <string name="keypad_9">9</string>
+    <string name="keypad_00">00</string>
+    <string name="keypad_0">0</string>
+
+    <!-- Progress / Tasks -->
+    <string-array name="progress_dialog_messages">
+        <item>Crunching numbers&#8230;</item>
+        <item>Evaluating data&#8230;</item>
+        <item>Analyzing values&#8230;</item>
+        <item>Running algorithms&#8230;</item>
+        <item>Checking with Banks&#8230;</item>
+        <item>Using Machine Learning&#8230;</item>
+        <item>Counting beans&#8230;</item>
+    </string-array>
+
+    <string name="credit_visa_holder">Visa: 4242 4242 4242 4242</string>
+    <string name="credit_master_holder">Mastercard: 5555 5555 5555 4444"</string>
+    <string name="credit_discover_holder">Discover: 6011 1111 1111 1117</string>
+    <string name="credit_amex_holder">Amex: 3782 822463 10005</string>
+</resources>

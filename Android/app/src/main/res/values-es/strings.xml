@@ -129,4 +129,9 @@
         <item>Usando Machine Learning&#8230;</item>
         <item>Contando frijoles&#8230;</item>
     </string-array>
+
+    <string name="credit_visa_holder">Visa: 4242 4242 4242 4242</string>
+    <string name="credit_master_holder">Mastercard: 5555 5555 5555 4444"</string>
+    <string name="credit_discover_holder">Discover: 6011 1111 1111 1117</string>
+    <string name="credit_amex_holder">Amex: 3782 822463 10005</string>
 </resources>
