@@ -4,11 +4,13 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.imobile3.groovypayments.R;
 import com.imobile3.groovypayments.data.model.Product;
 import com.imobile3.groovypayments.utils.StateListHelper;
+import com.squareup.picasso.Picasso;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -53,6 +55,9 @@ public class ProductListAdapter
         Product item = mItems.get(position);
 
         holder.label.setText(item.getName());
+
+        Picasso.get().load(item.getImageName()).into(holder.imageView);
+
         holder.label.setTextColor(
                 StateListHelper.getTextColorSelector(mContext, R.color.black_space));
     }
@@ -65,11 +70,13 @@ public class ProductListAdapter
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ViewGroup container;
         TextView label;
+        ImageView imageView;
 
         ViewHolder(View itemView) {
             super(itemView);
             container = itemView.findViewById(R.id.container);
             label = itemView.findViewById(R.id.label);
+            imageView = itemView.findViewById(R.id.icon);
             container.setOnClickListener(this);
         }
 

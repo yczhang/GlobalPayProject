@@ -21,6 +21,12 @@ public class ProductEntity {
     private String mNote;
 
     /**
+     * Optional image Icon for product
+     */
+
+    @ColumnInfo(name = "imageName")
+    private String mImageName;
+    /**
      * What is the price-per-unit (in pennies) that we charge the customer?
      */
     @ColumnInfo(name = "unit_price")
@@ -61,6 +67,12 @@ public class ProductEntity {
 
     public void setName(String name) {
         mName = name;
+    }
+
+    public String getImageName() { return mImageName; }
+
+    public void setImageName(String imageName) {
+        mImageName = imageName;
     }
 
     public String getNote() {
