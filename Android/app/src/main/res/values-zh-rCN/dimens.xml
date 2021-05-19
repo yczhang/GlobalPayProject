@@ -1,0 +1,79 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_size_tiny">9sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_xlarge">22sp</dimen>
+    <dimen name="text_size_header">28sp</dimen>
+    <dimen name="text_size_xheader">46sp</dimen>
+    <dimen name="text_size_huge">56sp</dimen>
+    <dimen name="text_size_keypad">32sp</dimen>
+
+    <!-- Padding / Margins -->
+    <dimen name="padding_button_side">10dp</dimen>
+    <dimen name="padding_tiny">2dp</dimen>
+    <dimen name="padding_xsmall">4dp</dimen>
+    <dimen name="padding_small">6dp</dimen>
+    <dimen name="padding_medium">10dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_xlarge">20dp</dimen>
+    <dimen name="padding_xxlarge">26dp</dimen>
+    <dimen name="margin_xsmall">1dp</dimen>
+    <dimen name="margin_small">2dp</dimen>
+    <dimen name="margin_medium">4dp</dimen>
+    <dimen name="margin_large">8dp</dimen>
+    <dimen name="margin_xlarge">16dp</dimen>
+
+    <!-- Buttons -->
+    <dimen name="button_width">120dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+
+    <!-- Icons -->
+    <dimen name="default_icon_size">128dp</dimen>
+
+    <!-- Main Navigation -->
+    <dimen name="main_nav_bar_height">64dp</dimen>
+    <dimen name="main_nav_bar_progress_dimens">50dp</dimen>
+    <dimen name="main_nav_bar_back_icon_padding">14dp</dimen>
+    <dimen name="main_nav_bar_logo_padding">8dp</dimen>
+
+    <!-- Main Dashboard Activity -->
+    <dimen name="main_dashboard_icon_size">96dp</dimen>
+    <dimen name="main_dashboard_button_large_width">168dp</dimen>
+    <dimen name="main_dashboard_button_large_height">136dp</dimen>
+    <dimen name="main_dashboard_button_icon_padding">16dp</dimen>
+    <dimen name="main_dashboard_button_margin">4dp</dimen>
+    <dimen name="main_dashboard_margin_extra_small">4dp</dimen>
+
+    <!-- Order Entry / Product List -->
+    <dimen name="product_list_icon_size">64dp</dimen>
+    <dimen name="product_list_icon_padding">8dp</dimen>
+    <dimen name="product_list_item_height">80dp</dimen>
+
+    <!-- Order History -->
+    <dimen name="cart_list_icon_size">56dp</dimen>
+    <dimen name="cart_list_icon_padding">6dp</dimen>
+    <dimen name="cart_list_item_height">100dp</dimen>
+
+    <!-- Checkout -->
+    <dimen name="payment_type_list_icon_size">112dp</dimen>
+    <dimen name="payment_type_list_icon_padding">8dp</dimen>
+    <dimen name="payment_type_list_item_height">140dp</dimen>
+
+    <!-- Miscellaneous -->
+    <dimen name="progress_dialog_width">260dp</dimen>
+    <dimen name="card_view_corner_radius">1dp</dimen>
+    <dimen name="detail_view_side_padding">16dp</dimen>
+    <dimen name="grid_item_border_width">1dp</dimen>
+    <dimen name="icon_ring_border_bg_dimens">40dp</dimen>
+    <dimen name="minimum_touch_height">48dp</dimen>
+</resources>

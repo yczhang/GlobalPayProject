@@ -63,35 +63,35 @@
             style="@style/TextView.Monospace.Bold"
             android:layout_width="match_parent"
             android:gravity="end"
-            android:text="Visa: 4242 4242 4242 4242" />
+            android:text="@string/credit_visa_holder" />
 
         <TextView
             style="@style/TextView.Monospace.Bold"
             android:layout_width="match_parent"
             android:layout_marginTop="@dimen/margin_large"
             android:gravity="end"
-            android:text="Visa (Debit): 4000 0566 5566 5556" />
+            android:text="@string/credit_master_holder" />
 
         <TextView
             style="@style/TextView.Monospace.Bold"
             android:layout_width="match_parent"
             android:layout_marginTop="@dimen/margin_large"
             android:gravity="end"
-            android:text="Mastercard: 5555 5555 5555 4444" />
+            android:text="@string/credit_discover_holder" />
 
         <TextView
             style="@style/TextView.Monospace.Bold"
             android:layout_width="match_parent"
             android:layout_marginTop="@dimen/margin_large"
             android:gravity="end"
-            android:text="Discover: 6011 1111 1111 1117" />
+            android:text="@string/credit_discover_holder" />
 
         <TextView
             style="@style/TextView.Monospace.Bold"
             android:layout_width="match_parent"
             android:layout_marginTop="@dimen/margin_large"
             android:gravity="end"
-            android:text="Amex: 3782 822463 10005" />
+            android:text="@string/credit_amex_holder" />
     </LinearLayout>
 
     <Button

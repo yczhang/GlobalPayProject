@@ -1,0 +1,167 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Button -->
+    <style name="Button" parent="android:Widget.Button">
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingLeft">@dimen/padding_button_side</item>
+        <item name="android:paddingRight">@dimen/padding_button_side</item>
+        <item name="android:textColor">@color/text_white_states</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Button.Blue" parent="@style/Button">
+        <item name="android:background">@color/blue_dodger_blue</item>
+    </style>
+
+    <style name="Button.Blue.Weighted" parent="@style/Button.Blue">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="Button.Gray" parent="@style/Button">
+        <item name="android:background">@color/gray_stay_with_me</item>
+    </style>
+
+    <style name="Button.Gray.Weighted" parent="@style/Button.Gray">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="Button.Green" parent="@style/Button">
+        <item name="android:background">@color/green_emerald</item>
+    </style>
+
+    <style name="Button.Red" parent="@style/Button">
+        <item name="android:background">@color/red_thunderbird</item>
+    </style>
+
+    <style name="Button.Orange" parent="@style/Button">
+        <item name="android:background">@color/orange_california</item>
+    </style>
+
+    <style name="Button.Purple" parent="@style/Button">
+        <item name="android:background">@color/purple_wisteria</item>
+    </style>
+
+    <style name="Button.Keypad" parent="@style/Button">
+        <item name="android:background">@drawable/transparent_ripple_button</item>
+        <item name="android:textSize">@dimen/text_size_keypad</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@color/text_black_states</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- TextView (Dark) -->
+    <style name="TextView.Label" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/black_space</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView.Label.SingleLine" parent="@style/TextView.Label">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextView.Label.AllCaps.SingleLine" parent="@style/TextView.Label">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextView.Label.Bold" parent="@style/TextView.Label">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Label.Italic" parent="@style/TextView.Label">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TextView.Label.AllCaps" parent="@style/TextView.Label">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextView.Label.SingleLine.Bold" parent="@style/TextView.Label.SingleLine">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Small" parent="@style/TextView.Label">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="TextView.Monospace.Bold" parent="@style/TextView.Label">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="TextView.Large.Monospace.Bold" parent="@style/TextView.Monospace.Bold">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="TextView.XLarge.Bold" parent="@style/TextView.Label">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+    </style>
+
+    <style name="TextView.Header.Bold" parent="@style/TextView.Label.Bold">
+        <item name="android:textSize">@dimen/text_size_header</item>
+    </style>
+
+    <style name="TextView.XHeader.Bold" parent="@style/TextView.Label.Bold">
+        <item name="android:textSize">@dimen/text_size_xheader</item>
+    </style>
+
+    <style name="TextView.Huge.Bold" parent="@style/TextView.Label.Bold">
+        <item name="android:textSize">@dimen/text_size_huge</item>
+    </style>
+
+    <style name="TextView.Large.Bold" parent="@style/TextView.Label">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="TextView.Large" parent="@style/TextView.Label">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <!-- TextView (Light) -->
+    <style name="TextView.Light" parent="@style/TextView.Label">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextView.Light.Large" parent="@style/TextView.Light">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="TextView.Light.Bold" parent="@style/TextView.Light">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white_cararra</item>
+    </style>
+
+    <style name="TextView.Light.Large.Bold" parent="@style/TextView.Light">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="TextView.Light.Header.Bold" parent="@style/TextView.Light">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_header</item>
+    </style>
+
+    <!-- Stripe UI -->
+    <style name="Stripe.CardInputWidget.EditText" parent="Stripe.Base.CardInputWidget.EditText" tools:ignore="PrivateResource">
+        <item name="android:textSize">19sp</item>
+    </style>
+</resources>
