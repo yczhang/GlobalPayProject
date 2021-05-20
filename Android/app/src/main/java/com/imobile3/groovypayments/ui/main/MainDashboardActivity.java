@@ -15,6 +15,7 @@ import com.imobile3.groovypayments.ui.orderhistory.OrderHistoryActivity;
 import com.imobile3.groovypayments.ui.user.UserProfileActivity;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -26,6 +27,8 @@ public class MainDashboardActivity extends BaseActivity {
 
     private MainDashboardButtonAdapter mMainDashboardButtonAdapter;
     private RecyclerView mLaunchButtonsRecyclerView;
+
+    private MainViewModel mViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,10 @@ public class MainDashboardActivity extends BaseActivity {
         if (savedInstanceState == null) {
             // showFragmentNow(R.id.container, MainFragment.newInstance(), MainFragment.TAG);
         }
+
+        mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
+
+        mViewModel.getProducts();
     }
 
     @Override

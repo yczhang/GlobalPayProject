@@ -1,16 +1,24 @@
 package com.imobile3.groovypayments.ui.orderentry;
 
+import com.imobile3.groovypayments.BuildConfig;
+import com.imobile3.groovypayments.MainApplication;
 import com.imobile3.groovypayments.concurrent.GroovyExecutors;
 import com.imobile3.groovypayments.data.ProductRepository;
 import com.imobile3.groovypayments.data.Result;
 import com.imobile3.groovypayments.data.model.Product;
+import com.imobile3.groovypayments.network.WebServiceManager;
+import com.stripe.Stripe;
+import com.stripe.exception.StripeException;
+import com.stripe.model.ProductCollection;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * The ViewModel serves as an async bridge between the View (Activity, Fragment)

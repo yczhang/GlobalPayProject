@@ -82,7 +82,7 @@ public class MainDashboardButtonAdapter
             super(itemView);
             container = itemView.findViewById(R.id.container);
             icon = itemView.findViewById(R.id.icon);
-            label = itemView.findViewById(R.id.label);
+            label = itemView.findViewById(R.id.tv_name);
             description = itemView.findViewById(R.id.description);
             container.setOnClickListener(this);
         }

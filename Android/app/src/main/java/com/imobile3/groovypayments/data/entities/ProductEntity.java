@@ -7,9 +7,12 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "product")
 public class ProductEntity {
 
-    @PrimaryKey
-    @ColumnInfo(name = "product_id")
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
     private long mId;
+
+    @ColumnInfo(name = "product_id")
+    private String mProductId;
 
     @ColumnInfo(name = "name")
     private String mName;
@@ -20,6 +23,18 @@ public class ProductEntity {
     @ColumnInfo(name = "note")
     private String mNote;
 
+    /**
+     * Optional image Icon for product
+     */
+
+    @ColumnInfo(name = "imageName")
+    private String mImageName;
+
+    /**
+     * Optional Prodcut Description
+     */
+    @ColumnInfo(name = "description")
+    private String mDesc;
     /**
      * What is the price-per-unit (in pennies) that we charge the customer?
      */
@@ -55,12 +70,32 @@ public class ProductEntity {
         mId = id;
     }
 
+    public String getProductId() {
+        return mProductId;
+    }
+
+    public void setProductId(String id) {
+        mProductId = id;
+    }
+
     public String getName() {
         return mName;
     }
 
     public void setName(String name) {
         mName = name;
+    }
+
+    public String getImageName() { return mImageName; }
+
+    public void setImageName(String imageName) {
+        mImageName = imageName;
+    }
+
+    public String getDesc() { return mDesc; }
+
+    public void setDesc(String desc) {
+        mDesc = desc;
     }
 
     public String getNote() {
