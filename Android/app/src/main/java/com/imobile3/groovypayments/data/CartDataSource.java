@@ -17,4 +17,14 @@ public class CartDataSource {
                 DatabaseHelper.getInstance().getDatabase().getCartDao().getCarts();
         return new Result.Success<>(results);
     }
+
+    @WorkerThread
+    public void addCart(Cart cart) {
+        DatabaseHelper.getInstance().getDatabase().getCartDao().insertCarts(cart);
+    }
+
+    @WorkerThread
+    public void deleteAllCard() {
+        DatabaseHelper.getInstance().getDatabase().getCartDao().deleteAll();
+    }
 }

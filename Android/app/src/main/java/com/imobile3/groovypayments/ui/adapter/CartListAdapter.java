@@ -21,6 +21,8 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,9 +65,16 @@ public class CartListAdapter
         holder.icon.setBackground(
                 ContextCompat.getDrawable(mContext, GroovyColor.Orange.colorRes));
 
-        holder.description.setText(rules.getOrderHistoryDescription());
+        holder.description.setText("Need to add description to database");
         holder.description.setTextColor(
                 StateListHelper.getTextColorSelector(mContext, R.color.gray_down_pour));
+
+        holder.labelTotal.setText(String.valueOf(item.getTaxTotal()/100.0));
+
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        String strDate = dateFormat.format(item.getDateCreated());
+
+        holder.labelDate.setText(strDate);
     }
 
     @Override

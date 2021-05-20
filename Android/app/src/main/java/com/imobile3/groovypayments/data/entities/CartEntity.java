@@ -12,7 +12,7 @@ import java.util.Date;
 @Entity(tableName = "cart")
 public class CartEntity {
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "cart_id")
     private long mId;
 
