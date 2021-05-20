@@ -6,6 +6,8 @@ import androidx.lifecycle.ViewModel;
 
 import com.imobile3.groovypayments.MainApplication;
 import com.imobile3.groovypayments.concurrent.GroovyExecutors;
+import com.imobile3.groovypayments.data.ProductDataSource;
+import com.imobile3.groovypayments.data.ProductRepository;
 import com.imobile3.groovypayments.data.model.Product;
 import com.imobile3.groovypayments.network.WebServiceManager;
 import com.stripe.exception.StripeException;
@@ -29,7 +31,7 @@ public class MainViewModel extends ViewModel {
 
                 ProductCollection products = com.stripe.model.Product.list(params);
 
-                List<Product> resultSet = new ArrayList<Product>();
+                ProductRepository repository = ProductRepository.getInstance(new ProductDataSource());
 
                 for ( com.stripe.model.Product product : products.getData()) {
 
@@ -41,10 +43,11 @@ public class MainViewModel extends ViewModel {
                     if(product.getImages() != null && product.getImages().size() > 0) {
                         newProduct.setImageName(product.getImages().get(0));
                     }
-                    resultSet.add(newProduct);
+
+                    newProduct.setProductId(product.getId());
+
+                    repository.getDataSource().addProduct(newProduct);
                 }
-
-
 
             } catch (StripeException e) {
                 e.printStackTrace();

@@ -38,35 +38,14 @@ public class OrderEntryViewModel extends ViewModel {
         final MutableLiveData<List<Product>> observable =
                 new MutableLiveData<>(new ArrayList<>());
 
-        GroovyExecutors.getInstance().getNetwork().execute(() -> {
-            try {
-                WebServiceManager.getInstance().init(MainApplication.getInstance().getWebServiceConfig());
-
-                Map<String, Object> params = new HashMap<>();
-
-                params.put("limit", 20);
-
-                ProductCollection products = com.stripe.model.Product.list(params);
-
-                List<Product> resultSet = new ArrayList<Product>();
-
-                for ( com.stripe.model.Product product : products.getData()) {
-
-                    Product newProduct = new Product();
-
-                    newProduct.setName(product.getName());
-                    newProduct.setDesc(product.getDescription());
-
-                    if(product.getImages() != null && product.getImages().size() > 0) {
-                        newProduct.setImageName(product.getImages().get(0));
-                    }
-                    resultSet.add(newProduct);
-                }
-
+        GroovyExecutors.getInstance().getDiskIo().execute(() -> {
+            Result<List<Product>> result = mRepository.getDataSource().loadProducts();
+            if (result instanceof Result.Success) {
+                List<Product> resultSet = ((Result.Success<List<Product>>)result).getData();
                 observable.postValue(resultSet);
-
-            } catch (StripeException e) {
-                e.printStackTrace();
+            } else {
+                // TODO: Return an error message appropriate for the UI.
+                observable.postValue(new ArrayList<>());
             }
         });
 

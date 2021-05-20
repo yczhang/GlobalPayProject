@@ -7,9 +7,12 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "product")
 public class ProductEntity {
 
-    @PrimaryKey
-    @ColumnInfo(name = "product_id")
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
     private long mId;
+
+    @ColumnInfo(name = "product_id")
+    private String mProductId;
 
     @ColumnInfo(name = "name")
     private String mName;
@@ -65,6 +68,14 @@ public class ProductEntity {
 
     public void setId(long id) {
         mId = id;
+    }
+
+    public String getProductId() {
+        return mProductId;
+    }
+
+    public void setProductId(String id) {
+        mProductId = id;
     }
 
     public String getName() {
