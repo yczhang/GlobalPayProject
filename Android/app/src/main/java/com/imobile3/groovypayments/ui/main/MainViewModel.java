@@ -33,6 +33,8 @@ public class MainViewModel extends ViewModel {
 
                 ProductRepository repository = ProductRepository.getInstance(new ProductDataSource());
 
+                repository.getDataSource().deleteAll();
+
                 for ( com.stripe.model.Product product : products.getData()) {
 
                     Product newProduct = new Product();
